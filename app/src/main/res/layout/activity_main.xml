@@ -13,7 +13,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Number 1"
-        android:inputType="number"
+        android:inputType="numberSigned"
         app:layout_constraintEnd_toEndOf="@+id/numberTwoEditText"
         app:layout_constraintStart_toStartOf="@+id/numberTwoEditText"
         app:layout_constraintTop_toTopOf="parent" />

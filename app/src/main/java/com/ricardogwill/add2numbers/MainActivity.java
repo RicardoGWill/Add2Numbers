@@ -21,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
         EditText e2 = (EditText) findViewById(R.id.numberTwoEditText);
         TextView t1 = (TextView) findViewById(R.id.resultTextView);
 
-        double num1 = Integer.parseInt(e1.getText().toString());
-        double num2 = Integer.parseInt(e2.getText().toString());
+        int num1 = Integer.parseInt(e1.getText().toString());
+        int num2 = Integer.parseInt(e2.getText().toString());
 
-        double sum = num1 + num2;
-        t1.setText(Double.toString(sum));
+        int sum = num1 + num2;
+        t1.setText(Integer.toString(sum));
     }
 
     public void subtract(View v) {
@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         EditText e2 = (EditText) findViewById(R.id.numberTwoEditText);
         TextView t1 = (TextView) findViewById(R.id.resultTextView);
 
-        double num1 = Integer.parseInt(e1.getText().toString());
-        double num2 = Integer.parseInt(e2.getText().toString());
+        int num1 = Integer.parseInt(e1.getText().toString());
+        int num2 = Integer.parseInt(e2.getText().toString());
 
-        double sum = num1 - num2;
-        t1.setText(Double.toString(sum));
+        int sum = num1 - num2;
+        t1.setText(Integer.toString(sum));
     }
 
     public void multiply(View v) {
@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
         EditText e2 = (EditText) findViewById(R.id.numberTwoEditText);
         TextView t1 = (TextView) findViewById(R.id.resultTextView);
 
-        double num1 = Integer.parseInt(e1.getText().toString());
-        double num2 = Integer.parseInt(e2.getText().toString());
+        int num1 = Integer.parseInt(e1.getText().toString());
+        int num2 = Integer.parseInt(e2.getText().toString());
 
-        double sum = num1 * num2;
-        t1.setText(Double.toString(sum));
+        int sum = num1 * num2;
+        t1.setText(Integer.toString(sum));
     }
 
     public void divide(View v) {
@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
         EditText e2 = (EditText) findViewById(R.id.numberTwoEditText);
         TextView t1 = (TextView) findViewById(R.id.resultTextView);
 
-        double num1 = Integer.parseInt(e1.getText().toString());
-        double num2 = Integer.parseInt(e2.getText().toString());
+        double num1 = Double.parseDouble(e1.getText().toString());
+        double num2 = Double.parseDouble(e2.getText().toString());
 
         double sum = num1 / num2;
         t1.setText(Double.toString(sum));
